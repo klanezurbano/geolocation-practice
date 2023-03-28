@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation API Practice</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="error-display"></p>
+    <div>
+        <p>Latitude: <span id="latitude-display"></span></p>
+        <p>Longitude: <span id="longitude-display"></span></p>
+
+        <button id="clear-watch-btn">Stop Monitoring</button>
+    </div>
+    <script>
+        
+        const errorDisplay = document.getElementById('error-display');
+
+        // Get a reference to the geolocation object
+        const geolocation = navigator.geolocation;
+        if (geolocation) {
+            // Get the user's current position once
+            geolocation.getCurrentPosition(success, error);
+
+            // Continuously monitor user's current position
+            const watchId = geolocation.watchPosition(success, error);
+
+            const clearWatchButton = document.getElementById('clear-watch-btn');
+            clearWatchButton.addEventListener('click', function() {
+                // To stop watching for position changes, call the clearWatch() method and pass in the unique ID returned by watchPosition()
+                geolocation.clearWatch(watchId);
+                
+                alert('Stop monitoring');
+                
+                clearWatchButton.disabled = true;
+            });
+        } else {
+            console.log('there is an error');
+        }
+
+        // Define the error callback function
+        function error(err) {
+            errorDisplay.classList.remove('hidden');
+            errorDisplay.textContent = err.message;
+        }
+
+        // Define the success callback function
+        function success(position) {
+            const latitudeDisplay = document.getElementById('latitude-display');
+            const longitudeDisplay = document.getElementById('longitude-display');
+
+            latitudeDisplay.textContent = position.coords.latitude;
+            longitudeDisplay.textContent = position.coords.longitude;
+            
+            errorDisplay.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
