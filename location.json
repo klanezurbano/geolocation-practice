@@ -1,0 +1,53 @@
+{
+    "locations": [
+        {
+            "name": "Venice Grand Canal Mall, McKinley Hill Drive, Taguig, Metro Manila",
+            "country": "Philippines",
+            "latitude": 14.534344212628667,
+            "longitude": 121.05174831022612
+        },
+        {
+            "name": "St. Francis of Assisi Parish",
+            "country": "Philippines",
+            "latitude": 7.105737889179763,
+            "longitude": 125.58273594188046
+        },
+        {
+            "name": "Taj Falaknuma Palace, Hyderabad",
+            "country": "India",
+            "latitude": 17.335709680043514,
+            "longitude": 78.4688660312946
+        },
+        {
+            "name": "Imperial Palace",
+            "country": "Japan",
+            "latitude": 35.68572225428853,
+            "longitude": 139.7529401478806
+        },
+        {
+            "name": "N Seoul Tower",
+            "country": "South Korea",
+            "latitude": 37.55130690849041,
+            "longitude": 126.98831695627103
+        },
+        {
+            "name": "Queen Elizabeth Park",
+            "country": "Canada",
+            "latitude": 49.24870236749231,
+            "longitude": -123.11358491417353
+        },
+        {
+            "name": "Empire State Building",
+            "country": "United States",
+            "latitude": 40.848680767441685,
+            "longitude": -73.99261827369745
+        },
+        {
+            "name": "Golden Mount Temple (Wat Saket)",
+            "country": "Thailand",
+            "latitude": 13.754760117772939,
+            "longitude": 100.50790157013056
+
+        }
+    ]
+}

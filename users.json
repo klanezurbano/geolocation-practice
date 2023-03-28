@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "firstName":"Maurine",
+            "lastName":"Stracke",
+            "age":31,
+            "gender":"female",
+            "email":"kdulyt@umich.edu"
+        },
+        {
+            "firstName":"Macy",
+            "lastName":"Greenfelder",
+            "age":45,
+            "gender":"female",
+            "email":"jissetts@hostgator.com"
+        },
+        {
+            "firstName":"Bradford",
+            "lastName":"Prohaska",
+            "age":43,
+            "gender":"male",
+            "email":"vcholdcroftg@ucoz.com"
+        }
+    ]
+}
