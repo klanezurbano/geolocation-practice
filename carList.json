@@ -1,0 +1,14 @@
+{
+  "carList": [
+    {
+      "brand": "Jensen Interceptor",
+      "ratePerDay": "$59",
+      "image": "https://static.live.templately.com/woocommerce/2022/12/e37f828a-car-2.png"
+    },
+    {
+      "brand": "Ferrari Monza",
+      "ratePerDay": "$59",
+      "image": "https://static.live.templately.com/woocommerce/2022/12/895b5f36-car-3.jpg"
+    }
+  ]
+}
